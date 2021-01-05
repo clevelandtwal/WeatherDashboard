@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Wetter Dashbored</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- City Container -->
+    <div class="container">
+        <!-- Row -->
+        <div class="row">
+            <!-- Column -->
+            <div class="col-4 bg-light">
+                <h4 class="search-header my-1">Search for a city</p>
+                    <!-- Input group -->
+                    <div class="input-group mb-3">
+                        <input id="searchCity" type="text" class="form-control" placeholder="City name..."
+                            class="input-group-append">
+                        <button id="searchBtn" class="btn btn-primary" type="button" id="button-addon2"><i
+                                class="far fa-search">Search</i></button>
+                    </div>
+                    <!-- End Input group -->
+
+                    <!-- City List Card (Local Storage list of cities) -->
+                    <div class="card">
+                        <ul class="list-group list-group-flush list">
+                        </ul>
+                    </div>
+                    <!-- End City List Card -->
+
+            </div>
+            <!-- End Column -->
+
+            <!-- Column 2 -->
+            <div class="col-lg-9">
+                <div id="currentCity" class="mt-4">
+                </div>
+            </div>
+            <!-- End Column 2 -->
+
+        </div>
+        <!-- End Row -->
+
+        <!-- Forecast Container -->
+        <div class="mt-4 col-md-12">
+
+            <h4 id="forecastBig" class="mt-3 hide">5-Day Forecast:</h4>
+
+            <!-- Start Row 2-->
+            <div id="forecast" class="row">
+
+            </div>
+            <!-- End Row 2-->
+
+        </div>
+        <!-- End Forecast Container -->
+
+    </div>
+    <!-- End container -->
+
+    <!-- Deferred JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
